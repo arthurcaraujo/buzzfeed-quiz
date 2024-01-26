@@ -1,0 +1,33 @@
+<main>
+    <h1>Brazilian Food Quiz</h1>
+
+    <div id="start" *ngIf="!start">
+        <p>
+            Let's play a game! Answer these 7 questions,
+            and I'll recommend a delicious Brazilian dish just for you!
+        </p>
+        <div id="btn-with-background">
+            <img alt="Brazilian food" src="../../../assets/brazilian-food.png" />
+            <button (click)="startQuiz()">START</button>
+        </div>
+    </div>
+
+    <div id="questions" *ngIf="!finished && start">
+        <p>
+            <span class="question-num">{{questionIndex + 1}}. </span>
+            {{selectedQuestion.question}}
+        </p>
+        <button
+            *ngFor="let option of selectedQuestion.options"
+            (click)="chooseAnswer(option.aliases)"
+        >
+            {{option.option}}
+        </button>
+    </div>
+
+    <div id="results" *ngIf="finished && start">
+        <p>I would recommend {{selectedAnswer.toUpperCase()}} for you!</p>
+        <img alt={{selectedAnswer}} src="../../../assets/{{selectedImg}}" />
+        <button (click)="restartQuiz()">RESTART</button>
+    </div>
+</main>
