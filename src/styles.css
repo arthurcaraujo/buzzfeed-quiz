@@ -5,5 +5,27 @@
 }
 
 body {
+    background-color: rgb(160, 180, 255);
+    font-family: "Open Sans", sans-serif;
     font-size: 1rem;
+}
+
+button {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    body, button {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    body, button {
+        font-size: 1.67rem;
+    }
 }

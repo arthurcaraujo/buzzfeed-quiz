@@ -17,12 +17,14 @@
             <span class="question-num">{{questionIndex + 1}}. </span>
             {{selectedQuestion.question}}
         </p>
-        <button
-            *ngFor="let option of selectedQuestion.options"
-            (click)="chooseAnswer(option.aliases)"
-        >
-            {{option.option}}
-        </button>
+        <div class="buttons-row">
+            <button
+                *ngFor="let option of selectedQuestion.options"
+                (click)="chooseAnswer(option.aliases)"
+            >
+                {{option.option}}
+            </button>
+        </div>
     </div>
 
     <div id="results" *ngIf="finished && start">
