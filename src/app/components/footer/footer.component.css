@@ -1,0 +1,29 @@
+footer {
+    background-color: rgb(255, 150, 50);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 2rem 0.5rem;
+    text-align: center;
+}
+
+footer a {
+    color: #000;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    footer {
+        font-size: 1.1rem;
+        padding: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    footer {
+        font-size: 1.5rem;
+        padding: 4rem;
+    }
+}
