@@ -1,0 +1,117 @@
+header {
+    align-items: center;
+    background-color: rgb(255, 135, 35);
+    column-gap: 1rem;
+    display: grid;
+    grid-template-columns: 9rem auto;
+    grid-template-rows: 3.5rem;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 0 0.5rem;
+}
+
+#main-website-link {
+    align-items: center;
+    border-radius: 50%;
+    display: grid;
+    gap: 0rem 0.3rem;
+    grid-column: 1 / 2;
+    grid-template-columns: 2.5rem auto;
+    grid-template-rows: 1.4rem 1.1rem;
+    height: 2.5rem;
+    justify-self: right;
+    text-decoration: none;
+    width: 100%;
+}
+
+#main-website-link > img {
+    border: 2px solid #322;
+    border-radius: 50%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    max-height: 100%;
+    transition: border 0.5s, transform 0.5s;
+}
+
+#main-website-link:hover > img {
+    transform: scale(1.125);
+}
+
+#main-website-link:active > img {
+    border: 2px solid #ddd;
+}
+
+#logo-first-name, #logo-last-name {
+    grid-column: 2 / 3;
+}
+
+#logo-first-name {
+    color: #fff;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1;
+    text-shadow: 0.125rem 0.125rem 0.0625rem #000;
+}
+
+#logo-last-name {
+    color: rgb(0, 120, 220);
+    font-family: "Nunito", sans-serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1;
+    text-shadow: 0.125rem 0.125rem 0.0625rem #000;
+    white-space: nowrap;
+}
+
+#buzzfeed-link {
+    grid-column: 2 / 3;
+    line-height: 0;
+}
+
+#buzzfeed-link > img {
+    max-height: 2.5rem;
+    max-width: 100%;
+}
+
+@media (min-width: 576px) {
+    header {
+        column-gap: 0;
+        grid-template-columns: 9rem 24.75rem; /* 540px = 33.75rem */
+        justify-content: center;
+    }
+
+    #buzzfeed-link {
+        justify-self: right;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        grid-template-columns: 9rem 36rem; /* 720px = 45rem */
+    }
+}
+
+@media (min-width: 1200px) {
+    header {
+        grid-template-columns: 9rem 51rem; /* 960px = 60rem */
+        grid-template-rows: 4rem;
+    }
+
+    #main-website-link {
+        grid-template-columns: 3rem auto;
+        grid-template-rows: 1.68rem 1.32rem;
+        height: 3rem;
+    }
+
+    #logo-first-name {
+        font-size: 1.68rem;
+    }
+
+    #logo-last-name {
+        font-size: 1.32rem;
+    }
+
+    #buzzfeed-link > img {
+        max-height: 3rem;
+    }
+}
