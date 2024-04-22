@@ -1,0 +1,103 @@
+{
+    "questions": [
+        {
+            "question": "Do you prefer sweet or savory foods?",
+            "options": [
+                {
+                    "option": "Sweet",
+                    "aliases": ["acai", "brigadeiro"]
+                },
+                {
+                    "option": "Savory",
+                    "aliases": ["coxinha", "pao-de-queijo", "pastel", "tapioca"]
+                }
+            ]
+        },
+        {
+            "question": "Do you like cheese?",
+            "options": [
+                {
+                    "option": "Yes",
+                    "aliases": ["pao-de-queijo", "pastel"]
+                },
+                {
+                    "option": "No",
+                    "aliases": ["acai", "brigadeiro", "coxinha", "tapioca"]
+                }
+            ]
+        },
+        {
+            "question": "Do you usually eat fruits and vegetables?",
+            "options": [
+                {
+                    "option": "Yes",
+                    "aliases": ["acai"]
+                },
+                {
+                    "option": "No",
+                    "aliases": ["brigadeiro", "coxinha", "pao-de-queijo", "pastel", "tapioca"]
+                }
+            ]
+        },
+        {
+            "question": "Do you eat chicken?",
+            "options": [
+                {
+                    "option": "Yes",
+                    "aliases": ["coxinha"]
+                },
+                {
+                    "option": "No",
+                    "aliases": ["acai", "brigadeiro", "pao-de-queijo", "pastel", "tapioca"]
+                }
+            ]
+        },
+        {
+            "question": "Do you prefer fried food, or are you more inclined towards baked/roasted dishes?",
+            "options": [
+                {
+                    "option": "Fried",
+                    "aliases": ["coxinha", "pastel"]
+                },
+                {
+                    "option": "Baked",
+                    "aliases": ["pao-de-queijo", "tapioca"]
+                }
+            ]
+        },
+        {
+            "question": "Do you eat chocolate?",
+            "options": [
+                {
+                    "option": "Yes",
+                    "aliases": ["brigadeiro"]
+                },
+                {
+                    "option": "No",
+                    "aliases": ["acai", "coxinha", "pao-de-queijo", "pastel", "tapioca"]
+                }
+            ]
+        },
+        {
+            "question": "Do you tend to choose healthier foods?",
+            "options": [
+                {
+                    "option": "Yes",
+                    "aliases": ["acai", "tapioca"]
+                },
+                {
+                    "option": "No",
+                    "aliases": ["brigadeiro", "coxinha", "pao-de-queijo", "pastel"]
+                }
+            ]
+        }
+    ],
+    "results": [
+        {"id": "acai", "img": "acai.png", "name": "Açaí"},
+        {"id": "brigadeiro", "img": "brigadeiro.png", "name": "Brigadeiro"},
+        {"id": "coxinha", "img": "coxinha.jpg", "name": "Coxinha"},
+        {"id": "pao-de-queijo", "img": "pao-de-queijo.jpg", "name": "Pão de queijo"},
+        {"id": "pastel", "img": "pastel.jpg", "name": "Pastel"},
+        {"id": "tapioca", "img": "tapioca.jpg", "name": "Tapioca"}
+    ]
+}
