@@ -7,7 +7,7 @@
             and I'll recommend a delicious Brazilian dish just for you!
         </p>
         <div id="btn-with-background">
-            <img alt="Brazilian food" src="../../../assets/brazilian-food.png" />
+            <img alt="Brazilian food" src="assets/brazilian-food.png" />
             <button (click)="startQuiz()">START</button>
         </div>
     </div>
@@ -29,7 +29,7 @@
 
     <div id="results" *ngIf="finished && start">
         <p>I would recommend {{selectedAnswer.toUpperCase()}} for you!</p>
-        <img alt={{selectedAnswer}} src="../../../assets/{{selectedImg}}" />
+        <img alt={{selectedAnswer}} src="assets/{{selectedImg}}" />
         <button (click)="restartQuiz()">RESTART</button>
     </div>
 </main>
